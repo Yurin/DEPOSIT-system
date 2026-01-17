@@ -1,0 +1,7 @@
+# examples/01_basic.in
+
+BALANCE
+DEPOSIT 100
+BALANCE
+DEPOSIT 5
+BALANCE
