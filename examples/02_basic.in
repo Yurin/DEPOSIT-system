@@ -1,0 +1,6 @@
+BALANCE alice
+DEPOSIT alice 100
+BALANCE alice
+DEPOSIT bob 5
+BALANCE bob
+BALANCE alice
