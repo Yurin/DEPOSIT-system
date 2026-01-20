@@ -1,0 +1,9 @@
+# examples/03_withdraw.in
+
+DEPOSIT alice 100
+WITHDRAW alice 30
+BALANCE alice
+WITHDRAW alice 100
+BALANCE alice
+WITHDRAW bob 10
+BALANCE bob

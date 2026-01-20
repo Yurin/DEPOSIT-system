@@ -13,8 +13,14 @@ for line in lines:
     user = parts[1]
     if cmd == "DEPOSIT":
         amount = int(parts[2])
-        # TODO: balancesを更新
         balances[user] = balances.get(user, 0) + amount
+
+    elif cmd == "WITHDRAW":
+        amount = int(parts[2])
+        if balances.get(user,0) >= amount:
+            balances[user] = balances.get(user,0) -  amount
+        else:
+            print("INSUFFICIENT")
+
     elif cmd == "BALANCE":
-        # TODO: userの残高を出力
         print(balances.get(user, 0))
