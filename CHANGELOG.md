@@ -37,3 +37,10 @@
 * Change: 失敗した `WITHDRAW / TRANSFER` は履歴に記録しない仕様
 * Change: `BALANCE` および `HISTORY` コマンド自体は履歴に残さない
 * Test: 履歴表示・失敗操作除外・順序確認を含む examples/05_history を追加
+
+## v0.6.0
+
+* Add: `TOTAL` コマンドを追加（全ユーザー残高の合計を1行で出力）
+* Impl: `sum(balances.values())` を用いた集計処理を実装
+* Change: 集計系コマンドは状態を変更しない仕様を明確化
+* Test: `TOTAL` を含む集計確認用 examples/06_aggregate を追加
