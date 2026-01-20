@@ -1,0 +1,13 @@
+# examples/04_transfer.in
+
+DEPOSIT alice 100
+DEPOSIT bob 10
+TRANSFER alice bob 30
+BALANCE alice
+BALANCE bob
+TRANSFER alice bob 100
+BALANCE alice
+BALANCE bob
+TRANSFER carol bob 1
+BALANCE carol
+BALANCE bob

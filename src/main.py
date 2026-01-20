@@ -22,5 +22,15 @@ for line in lines:
         else:
             print("INSUFFICIENT")
 
+    elif cmd == "TRANSFER":
+        amount = int(parts[3])
+        from_user = parts[1]
+        to_user = parts[2]
+        if balances.get(from_user,0) >= amount:
+            balances[user] = balances.get(from_user,0) - amount
+            balances[to_user] = balances.get(to_user,0) + amount
+        else:
+            print("INSUFFICIENT")
+
     elif cmd == "BALANCE":
         print(balances.get(user, 0))

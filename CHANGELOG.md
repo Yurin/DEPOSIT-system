@@ -13,3 +13,19 @@
 * Add: `BALANCE user` コマンド
 * Fix: 未登録ユーザー参照時の KeyError を防止
 
+## v0.3.0
+
+* Add: `WITHDRAW user amount` コマンドを追加
+* Add: 残高不足時に `INSUFFICIENT` を出力する仕様
+* Change: 出金は「残高が amount 以上のときのみ実行」するよう制御
+* Fix: 出金失敗時に状態（残高）が変化しないように修正
+* Test: 出金成功・失敗・未登録ユーザーを含む examples/03_withdraw を追加
+
+## v0.4.0
+
+* Add: `TRANSFER from_user to_user amount` コマンドを追加
+* Add: 送金成功時に送信元・送信先の残高を同時に更新
+* Change: 送金は「送信元残高が amount 以上のときのみ実行」する仕様
+* Fix: 残高不足・未登録ユーザー時に状態が変化しないよう制御
+* Test: 送金成功・失敗・未登録ユーザーを含む examples/04_transfer を追加
+
