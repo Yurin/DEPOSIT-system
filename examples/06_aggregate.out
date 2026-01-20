@@ -1,0 +1,13 @@
+# examples/06_aggregate.out
+
+0
+150
+150
+90
+80
+70
+10
+WITHDRAW bob 10
+WITHDRAW bob 60
+TRANSFER alice bob 30
+DEPOSIT bob 50

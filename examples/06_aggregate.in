@@ -1,0 +1,15 @@
+# examples/06_aggregate.in
+
+TOTAL
+DEPOSIT alice 100
+DEPOSIT bob 50
+TOTAL
+TRANSFER alice bob 30
+TOTAL
+WITHDRAW bob 60
+TOTAL
+WITHDRAW bob 10
+TOTAL
+BALANCE alice
+BALANCE bob
+HISTORY 10

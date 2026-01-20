@@ -11,13 +11,14 @@ for line in lines:
 
     parts = line.split()
     cmd = parts[0]
-    user = parts[1]
     if cmd == "DEPOSIT":
+        user = parts[1]
         amount = int(parts[2])
         balances[user] = balances.get(user, 0) + amount
         history.append(f"DEPOSIT {user} {amount}")
 
     elif cmd == "WITHDRAW":
+        user = parts[1]
         amount = int(parts[2])
         if balances.get(user,0) >= amount:
             balances[user] = balances.get(user,0) -  amount
@@ -37,10 +38,17 @@ for line in lines:
             print("INSUFFICIENT")
 
     elif cmd == "BALANCE":
+        user = parts[1]
         print(balances.get(user, 0))
 
     elif cmd == "HISTORY":
         n = int(parts[1])
         for item in reversed(history[-n:]):
             print(item)
-        
+
+    elif cmd == "TOTAL":
+        # balances_total = 0
+        # for user in balances:
+        #     balances_total += balances[user]
+        print(sum(balances.values()))
+        #print(balances_total)
