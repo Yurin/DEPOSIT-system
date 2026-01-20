@@ -1,0 +1,10 @@
+# examples/05_history.out
+
+WITHDRAW bob 10
+TRANSFER alice bob 30
+DEPOSIT bob 50
+DEPOSIT alice 100
+70
+70
+WITHDRAW bob 10
+TRANSFER alice bob 30

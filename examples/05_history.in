@@ -1,0 +1,11 @@
+# examples/05_history.in
+
+DEPOSIT alice 100
+DEPOSIT bob 50
+TRANSFER alice bob 30
+WITHDRAW bob 10
+WITHDRAW alice 100
+HISTORY 10
+BALANCE alice
+BALANCE bob
+HISTORY 2

@@ -29,3 +29,11 @@
 * Fix: 残高不足・未登録ユーザー時に状態が変化しないよう制御
 * Test: 送金成功・失敗・未登録ユーザーを含む examples/04_transfer を追加
 
+## v0.5.0
+
+* Add: 取引履歴管理（history リスト）を追加
+* Add: `HISTORY n` コマンドを追加（直近 n 件を新しい順で表示）
+* Add: 成功した `DEPOSIT / WITHDRAW / TRANSFER` を履歴に記録
+* Change: 失敗した `WITHDRAW / TRANSFER` は履歴に記録しない仕様
+* Change: `BALANCE` および `HISTORY` コマンド自体は履歴に残さない
+* Test: 履歴表示・失敗操作除外・順序確認を含む examples/05_history を追加
